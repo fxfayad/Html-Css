@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #000000;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      
+    }
+
+    .logo {
+      width: 70px;
+      height:60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #060000;
+      font-size: 16px;
+    }
+    nav ul li:hover {
+      border-bottom: 2px solid orange;
+ 
+    }
+
+    
+    .maintext {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 50px;
+    }
+
+    .maintext-text {
+      max-width: 50%;
+    }
+
+    .maintext-text h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .maintext-text h1 {
+      font-size: 48px;
+      margin: 10px 0;
+    }
+
+    .maintext-text p {
+      font-size: 16px;
+      margin: 20px 0;
+      
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      border: 1px solid orange;
+      background: rgb(250, 243, 225);
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .circle {
+      width: 250px;
+      height: 250px;
+      border: 2px solid orange;
+      border-radius: 50%;   
+      overflow: hidden;     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .circle img {
+      width: 100%;
+      height: 100%;  
+    }
+
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img class="logo" src=https://puc.ac.bd/Content/new-template-assets/images/puc_logo.png alt="">
+    </div>
+    <nav>
+      <ul>
+        <li><a class="active">Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Service</a></li>
+        <li><a>Resume</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="maintext">
+    <div class="maintext-text">
+      <h2>HELLO</h2>
+      <h1>I'M FAYAD<br>HOSSAIN</h1>
+      <p>
+        Hello every one , I’m Fayad, iam currently studies at Bsc in cse at Premier University. I’m passionate about learning, exploring new technologies,  I’m currently focused on developing my skills in programming, design, and modern tech fields to build meaningful and impactful projects.
+      </p>
+      <div class="buttons">
+        <button>About me </button>
+        <button>Email</button>
+      </div>
+    </div>
+    <div class="circle">
+      <img class="img" src=https://avatars.githubusercontent.com/u/159005944?v=4 alt="">
+    </div>
+  </section>
+</body>
+</html>
