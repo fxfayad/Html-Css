@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #000000; 
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgb(29, 29, 122);   
+    }
+
+    .logo {
+      width: 70px;
+      height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;   
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    nav ul li:hover {
+      border-bottom: 2px solid rgb(255, 174, 0);
+    }
+
+   
+    .welcometext{ 
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+      text-align: center;     
+      height: 50vh;           
+    }
+
+    .maintext {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 50px;
+    }
+
+    .maintext-text {
+      max-width: 50%;
+    }
+
+    .maintext-text h1 {
+      font-size: 48px;
+      margin: 10px 0;
+    }
+
+    .maintext-text p {
+      font-size: 16px;
+      margin: 20px 0;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      color: rgb(255, 255, 255);
+      padding: 10px 10px;
+      margin-right: 10px;
+      border: 1px solid rgb(0, 0, 0);
+      background:  rgb(19, 87, 19);
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .circle {
+      width: 250px;
+      height: 250px;
+      border: 2px solid orange;
+      border-radius: 50%;   
+      overflow: hidden;     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle img {
+      width: 100%;
+      height: 100%;  
+    }
+
+
+    .profiles {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 40px 50px;
+      gap: 30px;
+    }
+
+    .profile {
+      flex: 1;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .profile .circle {
+      margin: 0 auto 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img class="logo" src="https://puc.ac.bd/Content/new-template-assets/images/puc_logo.png" alt="">
+    </div>
+    <nav>
+      <ul>
+        <li><a class="active">Home</a></li>
+        <li><a>Service</a></li>
+        <li><a>Doctor</a></li>
+        <li><a>Appointment</a></li>
+        <li><a>Login</a></li>
+        <li><a>Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section class="welcometext">
+    <div class="maintext-text">
+      <h1>Welcome</h1>
+      <p>Hello
+        
+       
+      </p>
+    </div>
+  </section>
+
+  
+  <section class="profiles">
+    <div class="profile">
+      <div class="circle">
+        <img src="https://avatars.githubusercontent.com/u/159005944?v=4" alt="">
+      </div>
+      <h2>Doctor Name 1</h2>
+      <p>About doctor 1...</p>
+      <div class="buttons">
+        <button>About Me</button>
+        <button>Appointment</button>
+      </div>
+    </div>
+
+    <div class="profile">
+      <div class="circle">
+        <img src="https://avatars.githubusercontent.com/u/159005944?v=4" alt="">
+      </div>
+      <h2>Doctor Name 2</h2>
+      <p>About doctor 2...</p>
+      <div class="buttons">
+        <button>About Me</button>
+        <button>Appointment</button>
+      </div>
+    </div>
+
+    <div class="profile">
+      <div class="circle">
+        <img src="https://avatars.githubusercontent.com/u/159005944?v=4" alt="">
+      </div>
+      <h2>Doctor Name 3</h2>
+      <p>About doctor 3...</p>
+      <div class="buttons">
+        <button>About Me</button>
+        <button>Appointment</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
