@@ -23,7 +23,7 @@ header {
 .logo {
   height: 50px;
 }
-
+/* navigaton bar  */
 nav ul {
   list-style: none;
   display: flex;
@@ -41,7 +41,7 @@ nav ul li a:hover {
   color: orange;
 }
 
-
+/* welcome text  */
 .welcometext {
   display: flex;
   justify-content: center;
@@ -51,11 +51,12 @@ nav ul li a:hover {
   padding: 20px;
 }
 
+/* welcome message top */
 .maintext-text h1 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
-
+ /* welcome message peragraph */
 .maintext-text p {
   font-size: 1rem;
   max-width: 600px;
@@ -81,7 +82,7 @@ nav ul li a:hover {
   /* box shadow  */
 }
 
-
+/* circle cut out in profile section */
 .circle {
   width: 250px;
   height: 250px;
@@ -99,16 +100,23 @@ nav ul li a:hover {
 }
 
 
-
+/* doctor profile button */
 .buttons {
   margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  gap: 5px;
+  flex-wrap: wrap; 
+  
 }
 
+
 button {
-  padding: 8px 15px;
+  padding: 5px 5px;
   margin: 5px;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   background: rgb(12, 12, 179);
   color: white;
   cursor: pointer;
@@ -126,7 +134,7 @@ button:hover {
   padding: 20px;
 }
 
-
+/* fix layout */
 @media (max-width: 768px) {
   header {
 flex-direction: column;
