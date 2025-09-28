@@ -1,143 +1,169 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgb(29, 29, 122);
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: orange;
+}
+
+
+.welcometext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 40vh;
+  padding: 20px;
+}
+
+.maintext-text h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.maintext-text p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Doctor profiles */
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.profile {
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 5px 5px rgb(85, 85, 222); 
+  /* box shadow  */
+}
+
+
+.circle {
+  width: 250px;
+  height: 250px;
+  border: 2px solid orange;
+  border-radius: 50%;   
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;  
+}
+
+
+
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(12, 12, 179);
+  color: white;
+  cursor: pointer;
+  transition:  0.5s;
   
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #ffffff;
-      color: #000000; 
-    }
+}
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background: rgb(29, 29, 122);   
-    }
+button:hover {
+  background: orange;
+}
 
-    .logo {
-      width: 70px;
-      height: 70px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;   
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    nav ul li:hover {
-      border-bottom: 2px solid rgb(255, 174, 0);
-    }
-
-    .welcometext{ 
-      display: flex;
-      justify-content: center; 
-      align-items: center;     
-      text-align: center;     
-      min-height: 40vh; 
-     
-    }
-
-    .maintext {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 30px 50px;
-    }
-
-    .maintext-text {
-      max-width: 50%;
-    }
-
-    .maintext-text h1 {
-      font-size: 48px;
-      margin: 10px 0;
-    }
-
-    .maintext-text p {
-      font-size: 16px;
-      margin: 20px 0;
-    }
-
-    .buttons {
-      margin-top: 20px;
-    }
-
-    .buttons button {
-      color: white;
-      padding: 10px 10px;
-      margin-right: 10px; 
-      border: 1px solid whitesmoke;
-      background:  rgb(44, 91, 193);
-      border-radius: 15px;
-      font-size: 14px;
-      cursor: pointer; 
-      
-    }
-    .buttons button:hover {
-      background: rgb(11, 35, 88);
-    }
-
-      .buttons_more button {
-      color: white;
-      padding: 10px 10px;
-      border: 1px solid whitesmoke;
-      background: green;
-      border-radius: 15px;
-      font-size: 14px;
-      cursor: pointer; 
-      display: block; 
-      margin: 0 auto; 
-      
-    }
-    .buttons_more button:hover {
-      background:rgb(9, 91, 9);
-    }
+/* More doctors button */
+.buttons_more {
+  text-align: center;
+  padding: 20px;
+}
 
 
+@media (max-width: 768px) {
+  header {
+flex-direction: column;
+align-items: flex-start;
+  }
 
-    .circle {
-      width: 250px;
-      height: 250px;
-      border: 2px solid orange;
-      border-radius: 50%;   
-      overflow: hidden;     
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  nav ul {
+flex-direction: column;
+gap: 10px;
+margin-top: 10px;
+  }
 
-    .circle img {
-      width: 100%;
-      height: 100%;  
-    }
+  .profiles {
+flex-direction: column;
+align-items: center;
+  }
 
+  .maintext-text h1 {
+font-size: 1.5rem;
+  }
 
-    .profiles {
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-start;
-      padding: 40px 50px;
-      gap: 30px;
-    }
+  .maintext-text p {
+font-size: 0.95rem;
+  }
+}
 
-    .profile {
-      flex: 1;
-      max-width: 300px;
-      text-align: center;
-    }
+@media (max-width: 480px) {
+  .logo {
+height: 40px;
+  }
 
-    .profile .circle {
-      margin: 0 auto 20px auto;
-    }
+  button {
+width: 100%;
+  }
+
+  .profile {
+width: 90%;
+  }
+}
+
