@@ -3,12 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* there background image  and text font*/
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  background-size: cover;     
+  background-position: center;   
+  background-repeat: no-repeat;  
+  background-attachment: fixed;  
 }
 
+/* there nav bar color position */
 header {
   display: flex;
   justify-content: space-between;
@@ -21,6 +26,7 @@ header {
 .logo {
   height: 50px;
 }
+/* navigation bar */
 
 nav ul {
   list-style: none;
@@ -38,7 +44,7 @@ nav ul li a {
 nav ul li a:hover {
   color: orange;
 }
-
+/* welcome text */
 .welcometext {
   display: flex;
   justify-content: center;
@@ -58,7 +64,7 @@ nav ul li a:hover {
   max-width: 600px;
   margin: auto;
 }
-
+/* profiile section */
 .profiles {
   display: flex;
   justify-content: center;
@@ -79,7 +85,7 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: space-between;
 }
-
+/* profile circle  */
 .circle {
   border: 2px solid orange;
   border-radius: 50%;   
@@ -95,7 +101,7 @@ nav ul li a:hover {
   height: 100%;  
   object-fit: cover;
 }
-
+/* profile acton button */
 .buttons {
   margin-top: auto;
   display: flex;
@@ -162,6 +168,7 @@ button:hover {
   }
 }
 
+/* for fix layout */
 @media (max-width: 480px) {
   .logo {
     height: 40px;
