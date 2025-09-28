@@ -5,6 +5,9 @@
 }
 /* there background image  and text font*/
 body {
+  background: url("https://raw.githubusercontent.com/fxfayad/Html-Css/refs/heads/main/Medical%20website%20project/image/Gradient%20Background.jfif");
+  background-size: cover;
+  font-family: Arial, sans-serif;
   margin: 0;
   font-family: Arial, sans-serif;
   background-size: cover;     
@@ -19,7 +22,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
-  background: rgb(29, 29, 122);
+  background: rgba(14, 14, 173, 0.806);
   flex-wrap: wrap;
 }
 
@@ -44,6 +47,9 @@ nav ul li a {
 nav ul li a:hover {
   color: orange;
 }
+
+
+/* index page */
 /* welcome text */
 .welcometext {
   display: flex;
@@ -113,7 +119,7 @@ nav ul li a:hover {
 }
 
 button {
-  padding: 5px 5px;
+  padding: 8px 8px;
   margin: 2px;
   border: none;
   border-radius: 5px;
@@ -133,6 +139,7 @@ button:hover {
   padding: 20px;
 }
 
+/* for mobile and other layout */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -168,7 +175,7 @@ button:hover {
   }
 }
 
-/* for fix layout */
+
 @media (max-width: 480px) {
   .logo {
     height: 40px;

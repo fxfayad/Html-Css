@@ -3,28 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doctor Login</title>
+  <title>User Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div>
-      <img class="logo" src="https://github.com/fxfayad/Html-Css/blob/main/Medical%20website%20project/image/logo.png?raw=true" alt="">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="donate.html">Donate Blood</a></li>
-        <li><a href="appointment.html">Appointment</a></li>
-        <li><a href="user-login.html">User Login</a></li>
-        <li><a href="doctor-login.html">Doctor Login</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- header -->
+  <div id="header"></div>
+<script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    })
+    .catch(err => console.error("Failed to load header:", err));
+</script>
 
-  <section class="page-content">
-    <h1>Doctor Login</h1>
     
-  </section>
 </body>
 </html>
