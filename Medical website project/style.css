@@ -68,8 +68,41 @@ nav ul li a:hover {
 .maintext-text p {
   font-size: 0.rem;
   max-width: 600px;
-  margin: auto;
+  margin: 20px auto;
 }
+/* top section */
+/* match background color opacity for glass effect */
+.topbox {
+  display: flex;
+  align-items: center;
+  gap: 100px;              
+  border: 2px solid #ffffff2b;
+  border-radius: 15px;
+  padding: 200px;
+  max-height: 400px;     
+  background: #083f9214;
+  margin: 25px ;
+}
+.topbox img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;     
+  border-radius: 20px;
+}
+
+.topbox h1 {
+  margin: 15px;
+  font-size: 2rem;
+  color: rgb(14, 14, 179);
+}
+
+.topbox p {
+  margin: 15px;
+  color: #010000;
+  font-size: 1rem;
+}
+
+
 /* profiile section */
 .profiles {
   display: flex;
