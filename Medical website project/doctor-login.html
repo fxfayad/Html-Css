@@ -3,21 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Login</title>
+  <title>Blood donate</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="doctor.css">
 </head>
 <body>
-  <!-- header -->
-  <div id="header"></div>
-<script>
-  fetch("header.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("header").innerHTML = data;
-    })
-    .catch(err => console.error("Failed to load header:", err));
-</script>
 
-    
+  <!-- Header -->
+  <div id="header"></div>
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      })
+      .catch(err => console.error("Failed to load header:", err));
+  </script>
+
+  <!-- Login Section -->
+  <section class="login-section">
+    <h1>Doctor Login</h1>
+    <!-- doctor login message -->
+    <p>Enter your credentials to access your dashboard.</p>
+    <form action="dashboard.html" method="POST" class="login-form">
+      <label for="username">Username or Email</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <div class="form-footer">
+        <label class="remember">
+          <input type="checkbox" name="remember"> Remember me
+        </label>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="submit-btn">Login</button>
+      
+      <button type="submit" class="submit-btn">Creat account</button>
+      
+    </form>
+  </section>
+
+  
 </body>
 </html>

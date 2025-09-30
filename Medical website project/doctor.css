@@ -1,0 +1,99 @@
+
+/* for doctor login section */
+
+/* Login Section */
+.login-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 50px;
+
+}
+
+.login-section h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: rgb(12, 12, 179);
+}
+
+.login-section p {
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+/* Form Styles */
+.login-form {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.269);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  
+}
+
+
+/* Form Footer */
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-footer .remember {
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+.form-footer .forgot-password {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s;
+}
+
+.form-footer .forgot-password:hover {
+  color: #ff4b5c;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: rgb(12, 12, 179);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: orange;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 30px 20px;
+  }
+}

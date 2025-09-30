@@ -1,3 +1,5 @@
+/* for home page css */
+
 * {
   margin: 0;
   padding: 0;
@@ -21,9 +23,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
-  background: rgba(14, 14, 173, 0.806);
+  padding: 40px 30px;
+  background: rgb(12, 12, 179);
   flex-wrap: wrap;
+  
 }
 
 .logo {
@@ -35,6 +38,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  font-size: 0.8rem;
 }
 
 nav ul li a {
@@ -93,7 +97,7 @@ nav ul li a:hover {
 .topbox h1 {
   margin: 15px;
   font-size: 2rem;
-  color: rgb(14, 14, 179);
+  color: rgb(12, 12, 179);
 }
 
 .topbox p {
@@ -175,34 +179,45 @@ button:hover {
   padding: 20px;
 }
 
+
+
 /* for mobile and other layout */
 @media (max-width: 768px) {
-  header {
+  .profile {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;   
   }
 
   nav ul {
     flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 15px;
+    margin-top: 15px;
+    align-items: center; 
+    padding: 0;
+  }
+
+  .topbox {
+    flex-direction: column;  
+    gap: 20px;
+    padding: 30px;           
+    max-height: none;         
+    text-align: center;
+  }
+
+  .topbox img {
+    width: 200px;
+    height: 200px;
   }
 
   .profiles {
     flex-direction: column;
     align-items: center;
-  }
-
-  .maintext-text h1 {
-    font-size: 1.5rem;
-  }
-
-  .maintext-text p {
-    font-size: 0.95rem;
+    gap: 20px;
   }
 
   .profile {
-    max-width: 220px;
+    width: 90%;
+    max-width: 280px;
   }
 
   .circle {
@@ -211,20 +226,23 @@ button:hover {
   }
 }
 
-
 @media (max-width: 480px) {
   .logo {
     height: 40px;
   }
 
-  button {
-    padding: 6px 12px;
-    font-size: 0.8rem;
+  nav ul {
+    gap: 10px;
   }
 
-  .profile {
-    width: 90%;
-    max-width: 200px;
+  .topbox img {
+    width: 150px;
+    height: 150px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.8rem;
   }
 
   .circle {
