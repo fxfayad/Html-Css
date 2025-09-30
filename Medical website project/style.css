@@ -23,7 +23,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 30px;
+  padding: 50px 50px;
   background: rgb(12, 12, 179);
   flex-wrap: wrap;
   
@@ -126,7 +126,7 @@ nav ul li a:hover {
   text-align: center;
   max-width: 200px;
   min-height: 250px;
-  box-shadow: 0 0px 10px rgb(85, 85, 222);
+  box-shadow: 0 0px 10px rgba(77, 70, 70, 0.34);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
