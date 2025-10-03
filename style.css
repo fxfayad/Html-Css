@@ -23,7 +23,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 20px 50px; 
   background: rgb(12, 12, 179);
   flex-wrap: wrap;
   
@@ -80,11 +80,12 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   gap: 100px;              
-  border: 2px solid #ffffff2b;
+  border: 2px solid #4a42b35f;
   border-radius: 15px;
   padding: 200px;
   max-height: 100px;     
-  background: #083f9214;
+  background: #5e3ab356;
+  box-shadow: 0 0px 10px rgba(77, 70, 70, 0.34);
   margin: 25px ;
 }
 .topbox img {
